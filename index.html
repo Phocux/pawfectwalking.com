@@ -4,46 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pawfect Walking</title>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Material Design Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #6200ea;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 4px solid #3700b3;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        main, section {
+            padding: 30px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #6200ea;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.2em;
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        ul li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button {
+            background-color: #03dac6;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #018786;
+        }
+
+        footer {
+            background-color: #6200ea;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        .section-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .section-card p {
+            font-size: 1.1em;
+            color: #444;
+        }
+
+        .founders ul {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .founders li {
+            background-color: #6200ea;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            text-align: center;
+            width: 120px;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>Welcome to Pawfect Walking</h1>
-        <p>Tired of walking your dog? Email Pawfect Walking!</p> <!-- Add the slogan here -->
-        <p>We are a team of four girls trying to make ends meet while providing top-quality care for your furry friends. We understand the importance of your pets and are dedicated to their well-being.</p>
+        <h1>Pawfect Walking</h1>
+        <p>Tired of walking your dog? Email Pawfect Walking!</p>
+        <p>We are a team of four girls providing top-quality care for your furry friends.</p>
     </header>
 
     <main>
-        <h2>Founders</h2>
-        <ul>
-            <li>Penny</li>
-            <li>Claire</li>
-            <li>Beck</li>
-            <li>Kimmy</li>
-        </ul>
+        <div class="section-card">
+            <h2>Founders</h2>
+            <div class="founders">
+                <ul>
+                    <li>Penny</li>
+                    <li>Claire</li>
+                    <li>Beck</li>
+                    <li>Kimmy</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>About Pawfect Walking</h2>
+            <p>Pawfect Walking is a professional dog walking business dedicated to providing top-quality care for your furry friends. Our experienced team ensures that your dogs get the exercise and attention they need, even when you're unable to take them out yourself. We offer flexible scheduling, competitive rates, and a commitment to the well-being of every dog we walk.</p>
+            <a href="mailto:contact@pawfectwalking.com" class="cta-button">Contact Us</a>
+        </div>
+
+        <div class="section-card">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Dog Walking</li>
+                <li>Puppy Training</li>
+                <li>Dog Feeding</li>
+                <li>Dog Sitting</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>Discounts</h2>
+            <p>We offer military discounts as a token of appreciation for the service of our armed forces. Additionally, we provide special discounts for doctors and nurses who work tirelessly to keep us healthy. Contact us for more information on our discounted rates.</p>
+        </div>
     </main>
-
-    <section>
-        <h2>About Pawfect Walking</h2>
-        <p>Pawfect Walking is a professional dog walking business dedicated to providing top-quality care for your furry friends. Our experienced team of dog walkers ensures that your dogs get the exercise and attention they need, even when you're unable to take them out yourself. We offer flexible scheduling, competitive rates, and a commitment to the well-being of every dog we walk. Contact us today to schedule a walk for your beloved pet!</p>
-    </section>
-
-    <section>
-        <h2>Our Services</h2>
-        <ul>
-            <li>Dog Walking</li>
-            <li>Puppy Training</li>
-            <li>Dog Feeding</li>
-            <li>Dog Sitting</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Discounts</h2>
-        <p>We offer military discounts as a token of appreciation for the service of our armed forces. Additionally, we provide special discounts for doctors and nurses who work tirelessly to keep us healthy. Contact us for more information on our discounted rates.</p>
-    </section>
 
     <footer>
         <p>&copy; 2022 Pawfect Walking. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
